@@ -1,8 +1,9 @@
 import { persons } from './modules/data.js'
 import showPersons from './modules/showPersons.js'
+import get from './modules/get.js'
 
-const personsDOM = document.querySelector('.persons-wrapper')
-const btnDOM = document.querySelector('.btn')
+const personsDOM = get('.persons-wrapper')
+const btnDOM = get('.btn')
 
 btnDOM.addEventListener('click', () => {
   personsDOM.innerHTML = showPersons(persons)
