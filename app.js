@@ -1,3 +1,6 @@
+import { random } from './modules/random.js'
+
+console.log(random)
 const persons = [
   {
     id: 1,
